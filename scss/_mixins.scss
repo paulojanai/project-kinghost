@@ -11,7 +11,7 @@
 	justify-content: $justify;
 }
 
-@mixin btn ($height, $bg, $bg_hover, $color_text, $color_text_hover) {
+@mixin btn ($height, $bg, $bg_hover, $color_text) {
 	display: inline-block;
 	height: $height;
 	line-height: $height;
@@ -22,10 +22,9 @@
 	font-weight: bold;
 	font-size: 1.6rem;
 	cursor: pointer;
-	transition: all 0.3s;
+	transition: background-color 0.3s;
 
 	&:hover {
 		background-color: $bg_hover;
-		color: $color_text_hover;
 	}
 }
