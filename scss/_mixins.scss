@@ -1,3 +1,22 @@
+@mixin btn ($height, $bg, $bg_hover, $color_text, $color_text_hover) {
+    display: inline-block;
+    height: $height;
+    line-height: $height;
+    background-color: $bg;
+    color: $color_text;
+    border-radius: 6px;
+    padding: 0px 5rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: $bg_hover;
+        color: $color_text_hover;
+    }
+}
+
 @mixin responsive ($screen_width) {
     @media (max-width: $screen_width) {
         @content;
