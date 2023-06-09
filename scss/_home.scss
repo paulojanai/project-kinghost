@@ -30,6 +30,7 @@ p {
 .section-hero {
 	background-color: $brand-medium;
 	color: $white;
+	margin-top: 11.9rem;
 	padding-top: 4rem;
 
 	.container {
@@ -78,6 +79,8 @@ p {
 	}
 
 	@include responsive (991px) {
+		margin-top: 8rem;
+
 		.container {
 			flex-direction: column;
 			align-items: center;
